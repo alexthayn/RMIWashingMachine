@@ -23,14 +23,14 @@ public class WashingMachine extends UnicastRemoteObject implements WashingMachin
 	String location;
 
 	//Washing machine constructor
-	public WashingMachine(String location, int num) throws RemoteException{
+	public WashingMachine(String location, int id) throws RemoteException{
 		notFullyPaid = new NotFullyPaidState(this);
 		hasPaid = new HasPaidState(this);
 		inUse = new InUseState(this);
 		
 		state = notFullyPaid;
 		this.location = location;
-		machineNum = num;
+		machineNum = id;
 	}
 	
 	//returns num of quarters in machine

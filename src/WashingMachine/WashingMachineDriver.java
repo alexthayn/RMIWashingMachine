@@ -1,15 +1,17 @@
 package WashingMachine;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.rmi.Naming;
-import java.util.Scanner;
 
 public class WashingMachineDriver {
 	public static void main(String[] args) {
 		WashingMachine washingMachine = null;
 		int machineNum;
-		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		if(args.length < 2) {
-			System.out.println("Washing machine <Location> <number>" );
+			System.out.println("Washing machine <Location> <MachineNumber>" );
 			System.exit(1);
 		}
 		
@@ -22,9 +24,7 @@ public class WashingMachineDriver {
 			e.printStackTrace();
 		}
 		
-		@SuppressWarnings("resource")
-		Scanner in = new Scanner(System.in);
-		int choice;
+		int choice=0;
 		
 		System.out.println(washingMachine);
 		System.out.println("Welcome to Alex's laundromat!\n");
@@ -36,7 +36,13 @@ public class WashingMachineDriver {
 					"2. Eject quarters\n"+
 					"3. Start Machine\n"+
 					"4. Cancel Wash");
-			choice = in.nextInt();
+			try {
+				choice = Integer.parseInt(reader.readLine());
+				System.out.println("YOUR CHOICE: "+ choice);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
 			switch(choice) {
 				case 1: 
@@ -55,6 +61,5 @@ public class WashingMachineDriver {
 					System.out.println("That is an invalid option you bum!.");
 			}
 		}
-
 	}
 }

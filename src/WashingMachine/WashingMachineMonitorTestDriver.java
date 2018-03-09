@@ -4,9 +4,9 @@ import java.rmi.Naming;
 
 public class WashingMachineMonitorTestDriver {
 	public static void main(String[] args) {
-		String[] location = {"rmi://localhost/1/washingmachine",
-		                     "rmi://localhost/2/washingmachine",
-		                     "rmi://localhost/3/washingmachine"}; 
+		String[] location = {"rmi://localhost/Ephraim/washingmachine",
+		                     "rmi://localhost/Moroni/washingmachine",
+		                     "rmi://localhost/Manti/washingmachine"}; 
 		
 		if (args.length > 0)
         {
@@ -22,7 +22,7 @@ public class WashingMachineMonitorTestDriver {
 			try {
            		WashingMachineRemote machine = (WashingMachineRemote) Naming.lookup(location[i]);
            		monitor[i] = new WashingMachineMonitor(machine);
-				System.out.println(monitor[i]);
+				//System.out.println(monitor[i]);
         	} catch (Exception e) {
             	e.printStackTrace();
         	}

@@ -11,9 +11,9 @@ public class WashingMachineMonitor {
 	
 	public void report() {
 		try {
-			System.out.println("Washing machine location: "+ machine.getLocation());
-			System.out.println("Machine number: " + machine.getMachineNum());
-			System.out.println("Current state: " + machine.getStringState());
+			System.out.println("\nLOCATION: "+ machine.getLocation());
+			System.out.println("MACHINE NUMBER: " + machine.getMachineNum());
+			System.out.println("CURRENT STATE: " + machine.getStringState()+ "\n");
 		}catch (RemoteException e) {
 			e.printStackTrace();
 		}
