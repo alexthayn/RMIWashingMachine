@@ -35,8 +35,6 @@ I implemented the remote monitoring with Java RMI which allowed me to invoke met
 ![Class Diagram for RMI Washing Machine Program](https://github.com/alexthayn/RMIWashingMachine/blob/master/Class%20Diagram.png)
 
 ## State Diagram
-![State Diagram for RMI Washing Machine Program](https://github.com/alexthayn/RMIWashingMachine/blob/master/StateDiagram.png)
-
 #### Not Fully Paid:
 *	Eject quarters: eject any quarters currently in machine
 *	Insert quarter: add $0.25 to total
@@ -52,3 +50,5 @@ I implemented the remote monitoring with Java RMI which allowed me to invoke met
 *	Insert quarter: eject the inserted quarter
 *	Press start: do nothing
 *	Press cancel: stop the machine
+
+![State Diagram for RMI Washing Machine Program](https://github.com/alexthayn/RMIWashingMachine/blob/master/StateDiagram.png)
