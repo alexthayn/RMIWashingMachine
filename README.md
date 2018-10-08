@@ -12,9 +12,9 @@
 0. Navigate to the project directory 
 1. Start the RMI registry: >start rmiregistry
 2. Create n washing machine instances: java WashingMachine.WashingMachineDriver localhost/<location> <machine num>
-  * >java WashingMachine.WashingMachineDriver localhost/Ephraim 3
-  * >java WashingMachine.WashingMachineDriver localhost/Moroni 2
-  * >java WashingMachine.WashingMachineDriver localhost/Manti 1
+   * >java WashingMachine.WashingMachineDriver localhost/Ephraim 3
+   * >java WashingMachine.WashingMachineDriver localhost/Moroni 2
+   * >java WashingMachine.WashingMachineDriver localhost/Manti 1
 3. Start up the remote monitor: >java WashingMachine.WashingMachineMonitorTestDriver
 
 ## Description
@@ -35,6 +35,8 @@ I implemented the remote monitoring with Java RMI which allowed me to invoke met
 ![Class Diagram for RMI Washing Machine Program](https://github.com/alexthayn/RMIWashingMachine/blob/master/Class%20Diagram.png)
 
 ## State Diagram
+![State Diagram for RMI Washing Machine Program](https://github.com/alexthayn/RMIWashingMachine/blob/master/StateDiagram.png)
+
 #### Not Fully Paid:
 *	Eject quarters: eject any quarters currently in machine
 *	Insert quarter: add $0.25 to total
@@ -51,4 +53,4 @@ I implemented the remote monitoring with Java RMI which allowed me to invoke met
 *	Press start: do nothing
 *	Press cancel: stop the machine
 
-![State Diagram for RMI Washing Machine Program](https://github.com/alexthayn/RMIWashingMachine/blob/master/StateDiagram.png)
+
