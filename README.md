@@ -10,12 +10,15 @@
 
 ## How to run on Windows Command Prompt
 0. Navigate to the project directory 
-1. Start the RMI registry: >start rmiregistry
-2. Create n washing machine instances: java WashingMachine.WashingMachineDriver localhost/<location> <machine num>
+1. Start the RMI registry: 
+* >start rmiregistry
+2. Create n washing machine instances: 
+* >java WashingMachine.WashingMachineDriver localhost/<location> <machine num>
    * >java WashingMachine.WashingMachineDriver localhost/Ephraim 3
    * >java WashingMachine.WashingMachineDriver localhost/Moroni 2
    * >java WashingMachine.WashingMachineDriver localhost/Manti 1
-3. Start up the remote monitor: >java WashingMachine.WashingMachineMonitorTestDriver
+3. Start up the remote monitor: 
+* >java WashingMachine.WashingMachineMonitorTestDriver
 
 ## Description
 
