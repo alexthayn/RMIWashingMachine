@@ -32,4 +32,4 @@ Using a remote proxy pattern, we can monitor the washing machines that are in pl
 I implemented the remote monitoring with Java RMI which allowed me to invoke methods on a remote washing machine object. I make each remote washing machine available to the monitor by binding it to the registry and the monitoring program can then fetch the remote washing machine from the registry and invoke its methods.
 
 ## Class Diagram
-![Class Diagram for RMI Washing Machine Program](https://github.com/RMIWashingMachine/Class%20Diagram.png)
+![Class Diagram for RMI Washing Machine Program](https://github.com/alexthayn/RMIWashingMachine/blob/master/Class%20Diagram.png)
