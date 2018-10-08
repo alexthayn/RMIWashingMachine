@@ -13,7 +13,7 @@
 1. Start the RMI registry: 
 * >start rmiregistry
 2. Create n washing machine instances: 
-* >java WashingMachine.WashingMachineDriver localhost/<location> <machine num>
+* >java WashingMachine.WashingMachineDriver localhost/location machineNum
    * >java WashingMachine.WashingMachineDriver localhost/Ephraim 3
    * >java WashingMachine.WashingMachineDriver localhost/Moroni 2
    * >java WashingMachine.WashingMachineDriver localhost/Manti 1
